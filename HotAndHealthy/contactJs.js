@@ -1,0 +1,14 @@
+$(document).ready(function(){
+$('button').hide();
+$('#email').hide();
+$('#touchThis').click(function(){
+  $('#touchThis').hide();
+  $('#email').show();
+  $('button').show();
+});
+$('button').click(function(){
+  $('#email').hide();
+  $('#touchThis').show();
+  $('button').hide();
+});
+})
